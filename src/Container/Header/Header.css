@@ -1,0 +1,56 @@
+header .navbar {
+    padding: 0;
+    margin: 0;
+}
+
+header .navbar-brand {
+    width: 10%;
+}
+
+header img {
+    width: 100%;
+    margin: auto;
+}
+
+header a {
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header .navbar-nav a {
+    margin: 0 20px;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+
+header .navbar-nav a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #DA251C;
+
+}
+
+header .navbar-nav a:last-child{
+    margin-right: 0;
+}
+
+
+header .navbar .container {
+    position: relative;
+}
+
+header .navbar .container::after {
+    content: '';
+    position: absolute !important;
+    top: 50% !important;
+    right: -100% !important;
+    background-color: #DA251C !important;
+    width: 100%;
+    height: 4px;
+}
