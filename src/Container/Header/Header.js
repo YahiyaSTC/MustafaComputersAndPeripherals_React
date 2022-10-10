@@ -15,7 +15,7 @@ function Header() {
     <header >
       <Navbar  expand="lg" fixed='top'>
         <Container >
-          <Navbar.Brand href="#"><img src={Logo}  /></Navbar.Brand>
+          <Navbar.Brand ><img src={Logo}  /></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
