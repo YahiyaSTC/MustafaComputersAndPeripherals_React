@@ -17,9 +17,59 @@ main ul li {
   font-family: "Poppins", sans-serif;
 }
 
-
-
 .whyus .head h2 {
   font-size: 45px;
   font-weight: 500;
+}
+
+.whyus .body .card {
+  width: 100%;
+}
+
+.whyus .body .card .imgg {
+  height: 100px;
+  overflow: hidden;
+}
+
+.whyus .body .card .imgg img {
+  height: auto;
+  /* overflow: hidden; */
+}
+
+.whyus .body .card .card-title {
+  min-height: 54px;
+  line-height: 28px;
+  text-align: center;
+}
+
+
+.product {
+  color: #fff;
+  background-image: url("../Images//sectionbackimage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
+  padding: 50px 0;
+}
+
+.product .product_listing ul{
+  padding: 0;
+  margin: 0;
+}
+
+.product .product_listing ul li {
+  padding: 0;
+  margin: 5px 0;
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+
+.product button {
+  padding: 15px 50px !important;
+  border-radius: 1px !important;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
 }

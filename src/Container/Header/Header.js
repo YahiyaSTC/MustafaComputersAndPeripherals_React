@@ -12,8 +12,8 @@ import './Header.css'
 
 function Header() {
   return (
-    <header >
-      <Navbar  expand="lg" fixed='top'>
+    <header className="bg-primary">
+      <Navbar  expand="lg" fixed='top' >
         <Container >
           <Navbar.Brand ><img src={Logo}  /></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
