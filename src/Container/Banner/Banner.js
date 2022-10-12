@@ -27,10 +27,10 @@ function Banner() {
         <Container>
           <ListGroup as="ul" className="">
             <ListGroupItem as="li">
-              <i class="fa-brands fa-facebook-f"></i>
+              <i className="fa-brands fa-facebook-f"></i>
             </ListGroupItem>
             <ListGroupItem as="li">
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </ListGroupItem>
           </ListGroup>
         </Container>

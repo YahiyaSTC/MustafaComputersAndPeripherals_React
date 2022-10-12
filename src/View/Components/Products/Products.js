@@ -75,7 +75,7 @@ function Products() {
 
         <Row >
           <Col className="text-center my-5">
-            <Button variant="primary">DOWNLOAD FULL CATALOG</Button>
+            <Button variant="primary" className="d-flex justify-content-center align-items-center gap-3 m-auto"><i className="fa-solid fa-download"></i> DOWNLOAD FULL CATALOG</Button>
           </Col>
         </Row>
       </Container>
