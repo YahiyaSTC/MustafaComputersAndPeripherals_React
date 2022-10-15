@@ -19,7 +19,7 @@ function Products() {
           </Col>
         </Row>
         <Row className="body my-5">
-          <Col lg={3}>
+          <Col lg={3} md={6}>
             <div className="product_listing">
               <h4 className="my-5">LCD PRODUCTS</h4>
               <ListGroup as="ul">
@@ -32,7 +32,7 @@ function Products() {
               </ListGroup>
             </div>
           </Col>
-          <Col lg={3}>
+          <Col lg={3} md={6}>
             <div className="product_listing">
               <h4 className="my-5">LCD PRODUCTS</h4>
               <ListGroup as="ul">
@@ -45,7 +45,7 @@ function Products() {
               </ListGroup>
             </div>
           </Col>
-          <Col lg={3}>
+          <Col lg={3} md={6}>
             <div className="product_listing">
               <h4 className="my-5">LCD PRODUCTS</h4>
               <ListGroup as="ul">
@@ -58,7 +58,7 @@ function Products() {
               </ListGroup>
             </div>
           </Col>
-          <Col lg={3}>
+          <Col lg={3} md={6}>
             <div className="product_listing">
               <h4 className="my-5">LCD PRODUCTS</h4>
               <ListGroup as="ul">

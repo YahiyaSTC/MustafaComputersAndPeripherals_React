@@ -99,3 +99,80 @@ main ul li {
 .most_product .body_detail_img img {
   width: 20% !important;
 }
+
+
+@media only screen and (max-width: 991px) {
+  .whyus  .text  p{
+    width: 100% !important;
+  }
+
+  .whyus  .body {
+    gap: 50px;
+  }
+
+  .product .body .product_listing {
+   text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .product button {
+    font-size: 20px;
+  }
+  .most_product .body .body_detail img{
+    width: 100%;
+    max-width: 300px;
+  }
+  .most_product .body .body_detail .col-md-3{
+    text-align: center;
+  }
+  .most_product .body .body_detail_img  img{
+    width: 100%;
+    max-width: 70px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .product h2 {
+      font-size: 35px !important;
+  }
+  .product button {
+    padding: 15px 30px !important;
+    font-size: 15px !important;
+  }
+
+  .most_product h2{
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .most_product button {
+    padding: 15px 0 !important;
+    font-size: 19px !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .product h2 {
+      font-size: 30px !important;
+  }
+  .product button {
+    padding: 15px 10px !important;
+    font-size: 12px !important;
+  }
+  
+  .most_product h2{
+    font-size: 20px !important;
+  }
+  .most_product h4{
+    font-size: 17px !important;
+  }
+  .most_product button {
+    padding:  0 !important;
+    font-size: 14px !important;
+    width: 100% !important;
+  }
+}

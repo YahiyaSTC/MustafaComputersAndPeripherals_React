@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Navbar,
   Container,
@@ -11,9 +11,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './Header.css'
 
 function Header() {
+
+  const [state , setState] = useState('transparent')
+
+  const  listenScrollEvent = (e) => {
+     if (window.scrollY > 400) {
+      setState({backgroundColor: '#03bde6 !important'})
+    } else {
+      setState({backgroundColor:'transparent'})
+    }
+  }
+
+  useEffect(() => {window.addEventListener('scroll',listenScrollEvent)},[])
   return (
-    <header className="bg-primary">
-      <Navbar  expand="lg" fixed='top' >
+    <header className="header">
+      <Navbar expand="lg" fixed='top' className={state} >
         <Container >
           <Navbar.Brand ><img src={Logo}  /></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />

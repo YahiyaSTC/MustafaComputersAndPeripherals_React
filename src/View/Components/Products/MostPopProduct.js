@@ -30,7 +30,7 @@ function MostPopProduct() {
             <Col md={3} className="">
               <img src={LCD} width="100%" />
             </Col>
-            <Col md={9} className="s">
+            <Col md={9} className="">
               <p>
                 Modular and scalable, ARKA video wall displays create huge
                 screen surfaces with deep visual impact and thin bezel. Create

@@ -26,7 +26,7 @@ function WhyUs() {
         {/* </div> */}
         {/* <div className="body"> */}
         <Row className="body">
-          <Col md={4}>
+          <Col lg={4} md={12}>
             <Card className="text-center border-0">
               <div className="imgg">
                 <Card.Img
@@ -50,7 +50,7 @@ function WhyUs() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={4}>
+          <Col lg={4} md={12}>
             <Card className="text-center border-0">
               <div className="imgg">
                 <Card.Img
@@ -73,7 +73,7 @@ function WhyUs() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={4}>
+          <Col lg={4} md={12}>
             <Card className="text-center border-0">
               <div className="imgg">
                 <Card.Img
