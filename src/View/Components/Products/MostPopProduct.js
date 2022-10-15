@@ -28,7 +28,7 @@ function MostPopProduct() {
           </Row>
           <Row className="body_detail">
             <Col md={3} className="">
-              <img src={LCD} width="100%" />
+              <img src={LCD} width="100%" className="" />
             </Col>
             <Col md={9} className="">
               <p>
