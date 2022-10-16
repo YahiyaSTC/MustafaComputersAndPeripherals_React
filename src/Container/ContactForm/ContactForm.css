@@ -1,0 +1,57 @@
+
+h2{
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+p{
+    font-size: 18px;
+}
+
+
+form {
+    width: 50%;
+    padding: 20px 50px;
+}
+form input,form textarea,form button{
+    border-radius: 0 !important;
+}
+
+form input:focus,form textarea:focus{
+outline: none;
+border-color: #ddd !important;
+box-shadow: none !important;
+}
+
+h2,p, form label,form input,form button,form textarea{
+    font-family: "Poppins", sans-serif !important;  
+}
+
+form label{
+    font-size: 16px;
+}
+
+form textarea {
+    resize: none;
+}
+
+form button{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 900px) {
+    form{
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    form{
+        padding: 15px !important;
+    }
+    p{
+        font-size: 14px;
+    }
+}

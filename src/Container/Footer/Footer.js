@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import ContactForm from "../ContactForm/ContactForm";
 import {
   Button,
   Col,
@@ -15,6 +16,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Footer.css";
 
 function Footer() {
+
+  const [state , setState] = useState()
+
+  const  listenScrollEvent = (e) => {
+     if (window.scrollY > 400) {
+      setState({opacity:7.459})
+    } else {
+      setState({opacity:0})
+    }
+  }
+
+  useEffect(() => {window.addEventListener('scroll',listenScrollEvent)},[])
   return (
     <footer className="pt-5">
       <Container>
@@ -29,7 +42,7 @@ function Footer() {
             </p>
           </Col>
           <Col md={12} className="my-3">
-            <Example />
+            <ContactForm />
           </Col>
         </Row>
         <Row className="footer_mid">
@@ -73,65 +86,21 @@ function Footer() {
           <Col>
             <p>© Arkadiko. All right reserved, 2018-2022</p>
           </Col>
+          <Row>
+          <Col>
+          <div className="gototop">
+            <div className="gototop_">
+            <div className={state}>
+            <i class="fa-solid fa-angle-up"></i>
+            </div>
+            </div>
+          </div>
+          </Col>
         </Row>
+        </Row>
+        
       </Container>
     </footer>
-  );
-}
-
-function OffCanvasExample({ name, ...props }) {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
-  return (
-    <>
-      <Button variant="primary" onClick={handleShow} className="me-2">
-        {name}
-      </Button>
-      <Offcanvas show={show} onHide={handleClose} {...props} className="w-100">
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title className="m-auto text-center">
-            {" "}
-            <h2>Contact Form </h2>{" "}
-            <p>Fill in the form and our product expert will contact you</p>
-          </Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          <Form>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
-            </Form.Group>
-
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
-          </Form>
-        </Offcanvas.Body>
-      </Offcanvas>
-    </>
-  );
-}
-
-function Example() {
-  return (
-    <>
-      {["CONTACT US"].map((placement, idx) => (
-        <OffCanvasExample key={idx} placement={placement} name={placement} />
-      ))}
-    </>
   );
 }
 

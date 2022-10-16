@@ -27,19 +27,19 @@ footer .footer_mid p {
   width: 30%;
 }
 
-footer .footer_mid  ul {
+footer .footer_mid ul {
   margin: 0;
   padding: 0;
 }
 
-footer .footer_mid  ul li {
+footer .footer_mid ul li {
   margin: 0;
   padding: 0;
   background-color: transparent;
   border: none;
 }
 
-footer .footer_mid  ul li a {
+footer .footer_mid ul li a {
   display: flex;
   gap: 15px;
   align-items: center;
@@ -48,9 +48,9 @@ footer .footer_mid  ul li a {
   font-weight: 500;
 }
 
-footer .footer_mid .footer_list{
-    flex-direction: row !important;
-    gap: 10px;
+footer .footer_mid .footer_list {
+  flex-direction: row !important;
+  gap: 10px;
 }
 
 footer .footer_mid .footer_list li {
@@ -63,7 +63,7 @@ footer .footer_mid .footer_list li {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;  
+  padding: 0;
   margin: 0;
 }
 
@@ -73,28 +73,51 @@ footer .footer_mid .footer_list li i {
   font-weight: 500;
 }
 
-
 footer .footer_bottom p {
-    text-align: center;
+  text-align: center;
+}
+
+footer .footer_bottom .gototop {
+  position: fixed;
+  bottom: 10%;
+  right: 40px;
+  z-index: 800;
+}
+
+footer .footer_bottom .gototop  .gototop_ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #03bde6;
+  box-shadow: 1px 4px 12px rgb(98 109 149 / 42%);
+  cursor: pointer;
+  /* opacity: 7.459; */
+}
+
+footer .footer_bottom .gototop  .gototop_ i {
+  font-size: 25px;
 }
 
 @media only screen and (max-width: 1310px) {
-    footer .footer_mid .foot_ {
-        flex-direction: column !important;
-        gap: 40px;
-        margin-bottom: 30px;
-    }
+  footer .footer_mid .foot_ {
+    flex-direction: column !important;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
 
-    footer .footer_mid .foot_ p {
-        width: 100%;
-    }
+  footer .footer_mid .foot_ p {
+    width: 100%;
+  }
 
-    footer .footer_head h2 {
-        font-size: 30px;
-      }
-      
-      footer .footer_head button {
-        padding: 15px 40px !important;
-        font-size: 18px;
-      }
+  footer .footer_head h2 {
+    font-size: 30px;
+  }
+
+  footer .footer_head button {
+    padding: 15px 40px !important;
+    font-size: 18px;
+  }
 }

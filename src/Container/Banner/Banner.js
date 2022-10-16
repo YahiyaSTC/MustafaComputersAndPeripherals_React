@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Container, ListGroup, ListGroupItem } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Banner.css";
+import ContactForm from "../ContactForm/ContactForm";
 
 function Banner() {
   return (
@@ -17,7 +18,7 @@ function Banner() {
           <ListGroupItem as="li">RELIABLE</ListGroupItem>
         </ListGroup>
         <div className="body">
-          <Button variant="primary">Contact Us</Button>
+          <ContactForm />
         </div>
 
         {/* </Container> */}
