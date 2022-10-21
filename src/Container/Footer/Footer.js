@@ -8,7 +8,7 @@ import {
   ListGroupItem,
   Row,
   Offcanvas,
-  Form
+  Form,
 } from "react-bootstrap";
 
 import { Link } from "react-router-dom";
@@ -16,18 +16,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Footer.css";
 
 function Footer() {
+  const [state, setState] = useState();
 
-  const [state , setState] = useState()
-
-  const  listenScrollEvent = (e) => {
-     if (window.scrollY > 400) {
-      setState({opacity:7.459})
+  const listenScrollEvent = (e) => {
+    if (window.scrollY > 400) {
+      setState({ opacity: 7.459 });
     } else {
-      setState({opacity:0})
+      setState({ opacity: 0 });
     }
-  }
+  };
 
-  useEffect(() => {window.addEventListener('scroll',listenScrollEvent)},[])
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+  }, []);
   return (
     <footer className="pt-5">
       <Container>
@@ -45,60 +46,91 @@ function Footer() {
             <ContactForm />
           </Col>
         </Row>
-        <Row className="footer_mid">
+        <Row className="footer_mid pb-5">
           <Col md={12}>
             <h3>Contacts</h3>
           </Col>
-          <Col md={12} className="d-flex justify-content-between foot_">
-            {/* <Col md={12} lg={4}> */}
-            <p>
-              B12, 2/F, Dongmeng Building, No.690 Minzhi Avenue, Xinniu
-              Community, Minzhi Street, Longhua District, Shenzhen City,
-              Guangdong Province, China
-            </p>
-            {/* </Col> */}
-            {/* <Col md={12} lg={4}> */}
+          {/* <Col md={12} className=" foot_"> */}
+          <Col md={12} lg={5} className="foot_">
+            <div className="d-flex align-items-start gap-3 foot__">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>
+                Suite #23 Level 12 R K Square Extension Main Shahra-e-Liaquat
+                New Challi Karachi -74000 Sindh Pakistan
+              </p>
+            </div>
+            <div className="d-flex align-items-start gap-3 foot__">
+              <i class="fa-solid fa-clock"></i>
+              <p>
+                Office Timings: Mon- Fri (10 a.m-5 p.m) Suite 23, Level 12 R.K.
+                Square Extension, Main Shahra-e-Liaquat (New Challi), Karachi –
+                74000
+              </p>
+            </div>
+
             <ListGroup as="ul">
               <ListGroupItem as="li">
-                <Link to="tel:+8618665975338">
-                  <i class="fa-solid fa-phone-volume"></i>+8618665975338
+                <Link to="/">
+                  <i class="fa-solid fa-phone-volume"></i>+ 92 333 2372582
                 </Link>
               </ListGroupItem>
               <ListGroupItem as="li">
-                <Link to="mailto:info@arkadiko.tech">
-                  <i class="fa-solid fa-envelope"></i>info@arkadiko.tech
+                <Link to="/">
+                  <i class="fa-solid fa-phone-volume"></i>+92 21 32400326
+                </Link>
+              </ListGroupItem>
+              <ListGroupItem as="li">
+                <Link to="/">
+                  <i class="fa-solid fa-envelope"></i>
+                  info@info@mustafacomputers.com
                 </Link>
               </ListGroupItem>
             </ListGroup>
-            {/* </Col> */}
-            {/* <Col md={12} lg={4}> */}
-            <ListGroup as="ul" className="footer_list">
+            <ListGroup as="ul" className="footer_list mt-3">
               <ListGroupItem as="li">
                 <i className="fa-brands fa-facebook-f"></i>
               </ListGroupItem>
               <ListGroupItem as="li">
+                <i class="fa-brands fa-twitter"></i>
+              </ListGroupItem>
+              <ListGroupItem as="li">
                 <i className="fa-brands fa-linkedin"></i>
               </ListGroupItem>
+              <ListGroupItem as="li">
+                <i class="fa-brands fa-instagram"></i>
+              </ListGroupItem>
             </ListGroup>
+          </Col>
+          <Col md={12} lg={7} className="">
+            <iframe
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              width="100%"
+              height="400px"
+              src="https://maps.google.com/maps?q=Shahra-e-Liaquat%20New%20Challi%20Karachi%20-74000%20Sindh%20Pakistan&#038;t=m&#038;z=16&#038;output=embed&#038;iwloc=near"
+              title="Shahra-e-Liaquat New Challi Karachi -74000 Sindh Pakistan"
+              aria-label="Shahra-e-Liaquat New Challi Karachi -74000 Sindh Pakistan"
+            ></iframe>
           </Col>
         </Row>
         <Row className="footer_bottom pb-2">
           <Col>
-            <p>© Arkadiko. All right reserved, 2018-2022</p>
+            <p>© Mustafa Computers And Peripherals. All right reserved, 2018-2022</p>
           </Col>
           <Row>
-          <Col>
-          <div className="gototop">
-            <div className="gototop_">
-            <div className={state}>
-            <i class="fa-solid fa-angle-up"></i>
-            </div>
-            </div>
-          </div>
-          </Col>
+            <Col>
+              <div className="gototop">
+                <div className="gototop_">
+                  <div className={state}>
+                    <i class="fa-solid fa-angle-up"></i>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
         </Row>
-        </Row>
-        
       </Container>
     </footer>
   );

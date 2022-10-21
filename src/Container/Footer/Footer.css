@@ -24,7 +24,14 @@ footer .footer_mid h3 {
 
 footer .footer_mid p {
   word-spacing: 5px;
-  width: 30%;
+  /* margin-left: 40px; */
+}
+
+footer .footer_mid .foot__ i {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 5px;
+  /* font-weight: 500; */
 }
 
 footer .footer_mid ul {
@@ -37,6 +44,7 @@ footer .footer_mid ul li {
   padding: 0;
   background-color: transparent;
   border: none;
+  margin: 5px 0;
 }
 
 footer .footer_mid ul li a {
@@ -46,6 +54,7 @@ footer .footer_mid ul li a {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
+  width: fit-content;
 }
 
 footer .footer_mid .footer_list {

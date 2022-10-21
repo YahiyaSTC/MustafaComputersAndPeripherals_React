@@ -22,10 +22,11 @@ header .navbar-brand {
 header img {
   width: 100%;
   margin: auto;
+  /* filter: invert(1); */
 }
 
 header a {
-  color: #fff !important;
+  color: #000 !important;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;

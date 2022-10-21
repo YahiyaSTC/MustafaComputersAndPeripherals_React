@@ -10,7 +10,8 @@ function Banner() {
       <div className="banner_main">
         {/* <Container> */}
         <div className="heading">
-          <h1>Visual Technology Solutions</h1>
+          <h1>INTERACTIVE FLAT PANEL</h1>
+          {/* <h1>Visual Technology Solutions</h1> */}
         </div>
         <ListGroup as="ul" className="list">
           <ListGroupItem as="li">SMART</ListGroupItem>
